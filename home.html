@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <p>set your canvas if you want (default: 200x200)</p>
+    <input id="cvwidth"type="text" placeholder="width"><br>
+    <input type="text" id="cvheight" placeholder="height"><br>
+    <input id="myBtn" type="button" value="Enter">
+    <p>please choose object to draw</p>
+    <select id="choice">
+        <option value="line">line</option>
+        <option value="circle" >circle</option>
+        <option value="ellipse">ellipse</option>
+    </select><br><br>
+
+    <div id="drawline">
+        <label for="linetype">select line type: </label>
+        <select type="radio" id="linetype">
+            <option value="solid">solid line</option>
+            <option value="dashed" >dashed line</option>
+            <option value="dotted">dotted line</option>
+        </select><br><br>
+        <!-- <div>
+            <input type="radio" id="solid">
+            <label for="solid">solid line</label>
+            <input type="radio" id="dashed">
+            <label for="dashed">dashed line</label>
+            <input type="radio" id="dotted">
+            <label for="dotted">dotted line</label>
+        </div> -->
+        
+        <label for="x1">x1</label>
+        <input id="x1" type="text"><br><br>
+        <label for="y1">y1</label>
+        <input id="y1" type="text"><br><br>
+        <label for="x2">x2</label>
+        <input id="x2" type="text"><br><br>
+        <label for="y2">y2</label>
+        <input id="y2" type="text"><br><br>
+        <label for="linewidth">line width:</label>
+        <input id="linewidth" type="text"><br><br>
+    </div>
+    <div id="drawcircle">
+        <label for="xcenter">xcenter</label>
+        <input id="xcenter" type="text"><br><br>
+        <label for="ycenter">ycenter</label>
+        <input id="ycenter" type="text"><br><br>
+        <label for="radius">radius</label>
+        <input id="radius" type="text"><br><br>
+
+    </div>
+    <div id="drawellipse">
+        <label for="xcenterEl">xcenter</label>
+        <input id="xcenterEl" type="text"><br><br>
+        <label for="ycenterEl">ycenter</label>
+        <input id="ycenterEl" type="text"><br><br>
+        <label for="semimajor">semi-major</label>
+        <input id="semimajor" type="text"><br><br>
+        <label for="semiminor">semi-minor</label>
+        <input id="semiminor" type="text"><br><br>
+    </div>
+    <input id="draw" type="button" value="draw">
+    <script src="app.js"></script>
+</body>
+</html>
