@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <p>please select your color </p>
+    <input id='colour' type="color" value="#ff0000" />
+    <p>your canvas is seted with default: 500x500</p>
+    <!-- <input id="cvwidth"type="text" placeholder="width"><br>
+    <input type="text" id="cvheight" placeholder="height"><br>
+    <input id="myBtn" type="button" value="Enter"> -->
+    <p>please choose object to draw</p>
+    <!-- <label for="r">red</label>
+    <input id="r" type="button" value="Enter">
+    <label for="g">green</label>
+    <input id="g" type="button" value="Enter">
+    <label for="a">a</label>
+    <input id="b" type="button" value="Enter"> -->
+    <select id="choice">
+        <option value="epitrochoid">epitrochoid</option>
+        <option value="hypotrochoid" >hypotrochoid</option>
+    </select><br><br>
+    <label for="a">a</label>
+    <input id="a" type="number"><br><br>
+    <label for="b">b</label>
+    <input id="b" type="number"><br><br>
+    <label for="k">k</label>
+    <input id="k" type="number"><br><br>
+    <label for="linewidth">line width:</label>
+    <input id="linewidth" type="text"><br><br>
+    <!-- <div id="epitrochoid">
+        <label for="a">a</label>
+        <input id="a" type="number"><br><br>
+        <label for="b">b</label>
+        <input id="b" type="number"><br><br>
+        <label for="k">k</label>
+        <input id="k" type="number"><br><br>
+        <label for="linewidth">line width:</label>
+        <input id="linewidth" type="text"><br><br>
+    </div> -->
+    <input id="draw" type="button" value="draw">
+    <input id="clear" type="button" value="clear">
+    <script src="app.js"></script>
+</body>
+</html>
